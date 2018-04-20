@@ -1,5 +1,7 @@
 ﻿using DMZ01.Views;
 using Microsoft.Practices.Unity;
+using Misson;
+using Prism.Modularity;
 using Prism.Unity;
 using System.Windows;
 
@@ -14,6 +16,11 @@ namespace DMZ01
         protected override void InitializeShell()
         {
             Application.Current.MainWindow.Show();
+        }
+        protected override void ConfigureModuleCatalog()
+        {
+            var catalog = (ModuleCatalog)ModuleCatalog;
+            catalog.AddModule(typeof(MissionModule));
         }
     }
 }
