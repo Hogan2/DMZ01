@@ -1,12 +1,10 @@
 ﻿<UserControl x:Class="Misson.Views.GMapCtrl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:prism="http://prismlibrary.com/"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Misson.Views"
              xmlns:mymap="clr-namespace:MyGMap;assembly=MyGMap"
-             xmlns:wfi ="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
-             >
+             xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+             prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <wfi:WindowsFormsHost >
             <mymap:MapCtrl x:Name="mapCtrl1"/>
