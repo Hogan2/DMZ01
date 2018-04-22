@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Misson.Views.MapCtrlBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ToolBarTray Background="DarkGray" Height="30" VerticalAlignment="Top">
+
+        <ToolBar Width="Auto" Height="30" >
+            <Button Background="LightSkyBlue" Content="Open" />
+            <Button Background="LightSkyBlue" Content="Close" />
+            <Button Background="LightSkyBlue" Content="Exit" />
+        </ToolBar>
+
+    </ToolBarTray>
+</UserControl>

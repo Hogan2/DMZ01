@@ -4,7 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mymap="clr-namespace:MyGMap;assembly=MyGMap"
              xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
-             prism:ViewModelLocator.AutoWireViewModel="True">
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:local="clr-namespace:Misson.Views">
     <Grid>
         <wfi:WindowsFormsHost >
             <mymap:MapCtrl x:Name="mapCtrl1"/>
